@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%= @shopping_list.name %>
+</p>
+
+<p>
+  <b>Archived:</b>
+  <%= @shopping_list.archived %>
+</p>
+
+
+<%= link_to 'Edit', edit_shopping_list_path(@shopping_list) %> |
+<%= link_to 'Back', shopping_lists_path %>

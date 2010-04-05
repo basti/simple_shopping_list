@@ -1,4 +1,8 @@
 SimpleShoppingList::Application.routes.draw do |map|
+  resources :shopping_lists
+
+  root :to => "ShoppingLists#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

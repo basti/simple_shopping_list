@@ -1,0 +1,15 @@
+<%= form_for(@shopping_list) do |f| %>
+  <%= f.error_messages %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :archived %><br />
+    <%= f.check_box :archived %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
